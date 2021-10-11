@@ -121,15 +121,15 @@ public class AsignacionCatHor extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(1, 1, 1));
         jLabel7.setText("Horario de clase 1:");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, -1, -1));
 
         campoHorario1.setEditable(false);
-        jPanel1.add(campoHorario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 280, 230, -1));
+        jPanel1.add(campoHorario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 300, 230, -1));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(1, 1, 1));
         jLabel8.setText("Horario de clase 2:");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, -1, -1));
 
         campoHorario2.setEditable(false);
         campoHorario2.addActionListener(new java.awt.event.ActionListener() {
@@ -137,7 +137,7 @@ public class AsignacionCatHor extends javax.swing.JFrame {
                 campoHorario2ActionPerformed(evt);
             }
         });
-        jPanel1.add(campoHorario2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 330, 230, -1));
+        jPanel1.add(campoHorario2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 350, 230, -1));
 
         jButton12.setText("Atrás");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
@@ -159,7 +159,7 @@ public class AsignacionCatHor extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(1, 1, 1));
         jLabel9.setText("Alumno");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 70, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 70, -1));
 
         campoNombreAHC.setEditable(false);
         campoNombreAHC.addActionListener(new java.awt.event.ActionListener() {
@@ -167,15 +167,15 @@ public class AsignacionCatHor extends javax.swing.JFrame {
                 campoNombreAHCActionPerformed(evt);
             }
         });
-        jPanel1.add(campoNombreAHC, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, 440, -1));
+        jPanel1.add(campoNombreAHC, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 380, -1));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(1, 1, 1));
         jLabel10.setText("Asistir:");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 90, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 90, -1));
 
         campoDiaAsistencia.setEditable(false);
-        jPanel1.add(campoDiaAsistencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 230, 380, -1));
+        jPanel1.add(campoDiaAsistencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 250, 380, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
