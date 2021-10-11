@@ -178,6 +178,11 @@ public class AltaAlumno extends javax.swing.JFrame {
         jPanel1.add(campoContEmerg, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 290, 159, -1));
 
         BotonAtras.setText("Atrás");
+        BotonAtras.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BotonAtrasMousePressed(evt);
+            }
+        });
         BotonAtras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonAtrasActionPerformed(evt);
@@ -186,6 +191,11 @@ public class AltaAlumno extends javax.swing.JFrame {
         jPanel1.add(BotonAtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 80, -1));
 
         BotonGuardar.setText("Guardar");
+        BotonGuardar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BotonGuardarMousePressed(evt);
+            }
+        });
         BotonGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonGuardarActionPerformed(evt);
@@ -227,6 +237,19 @@ public class AltaAlumno extends javax.swing.JFrame {
     private void BotonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonGuardarActionPerformed
       
     }//GEN-LAST:event_BotonGuardarActionPerformed
+
+    private void BotonAtrasMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonAtrasMousePressed
+        // TODO add your handling code here:
+        new MenuOpciones().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_BotonAtrasMousePressed
+
+    private void BotonGuardarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonGuardarMousePressed
+        // TODO add your handling code here:
+        // si es mayor de edad debe ir a la asignacion de categoria
+        // si es menor debe pedir los datos del tutor
+        
+    }//GEN-LAST:event_BotonGuardarMousePressed
 
     /**
      * @param args the command line arguments

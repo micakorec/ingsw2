@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package CapaDatos;
+package DAO;
 
 /**
  *
  * @author Rocio
  */
-public class Inseta_Datos {
+public class PersonaDAO {
     
 }
