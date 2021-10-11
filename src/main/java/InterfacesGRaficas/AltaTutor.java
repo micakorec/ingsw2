@@ -27,21 +27,181 @@ public class AltaTutor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        campoNombreT = new javax.swing.JTextField();
+        campoApellidoT = new javax.swing.JTextField();
+        campoRelacion = new javax.swing.JTextField();
+        campoTelefonoT = new javax.swing.JTextField();
+        campoDniT = new javax.swing.JTextField();
+        jButton17 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(254, 254, 254));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel4.setBackground(new java.awt.Color(0, 102, 0));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 800, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 10));
+
+        jPanel3.setBackground(new java.awt.Color(9, 151, 9));
+
+        jLabel5.setFont(new java.awt.Font("Century Schoolbook L", 1, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Tutor");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(346, 346, 346)
+                .addComponent(jLabel5)
+                .addContainerGap(347, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addComponent(jLabel5)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 800, 50));
+
+        jPanel2.setBackground(new java.awt.Color(0, 102, 0));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 800, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 800, 10));
+
+        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(1, 1, 1));
+        jLabel24.setText("Nombre:");
+        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, -1, -1));
+
+        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(1, 1, 1));
+        jLabel25.setText("Apellido:");
+        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, -1, -1));
+
+        jLabel26.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(1, 1, 1));
+        jLabel26.setText("Relación con el alumno:");
+        jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, -1, -1));
+
+        jLabel27.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(1, 1, 1));
+        jLabel27.setText("Teléfono:");
+        jPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 330, -1, -1));
+
+        jLabel28.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(1, 1, 1));
+        jLabel28.setText("DNI:");
+        jPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, -1, -1));
+
+        campoNombreT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoNombreTActionPerformed(evt);
+            }
+        });
+        jPanel1.add(campoNombreT, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, 271, -1));
+        jPanel1.add(campoApellidoT, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 170, 271, -1));
+
+        campoRelacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoRelacionActionPerformed(evt);
+            }
+        });
+        jPanel1.add(campoRelacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 220, 180, -1));
+
+        campoTelefonoT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoTelefonoTActionPerformed(evt);
+            }
+        });
+        jPanel1.add(campoTelefonoT, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 320, 269, -1));
+
+        campoDniT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoDniTActionPerformed(evt);
+            }
+        });
+        jPanel1.add(campoDniT, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 270, 270, -1));
+
+        jButton17.setText("Atrás");
+        jPanel1.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 90, -1));
+
+        jButton18.setText("Guardar");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 440, 100, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void campoRelacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoRelacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoRelacionActionPerformed
+
+    private void campoTelefonoTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoTelefonoTActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoTelefonoTActionPerformed
+
+    private void campoDniTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoDniTActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoDniTActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void campoNombreTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoNombreTActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoNombreTActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +239,22 @@ public class AltaTutor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField campoApellidoT;
+    private javax.swing.JTextField campoDniT;
+    private javax.swing.JTextField campoNombreT;
+    private javax.swing.JTextField campoRelacion;
+    private javax.swing.JTextField campoTelefonoT;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables
 }

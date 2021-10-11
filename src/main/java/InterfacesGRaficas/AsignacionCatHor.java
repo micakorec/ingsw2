@@ -27,21 +27,189 @@ public class AsignacionCatHor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        campoCat = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        campoHorario1 = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        campoHorario2 = new javax.swing.JTextField();
+        jButton12 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel9 = new javax.swing.JLabel();
+        campoNombreAHC = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        campoDiaAsistencia = new javax.swing.JTextField();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(254, 254, 254));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel4.setBackground(new java.awt.Color(0, 102, 0));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 800, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 10));
+
+        jPanel3.setBackground(new java.awt.Color(9, 151, 9));
+
+        jLabel5.setFont(new java.awt.Font("Century Schoolbook L", 1, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Horario & Categoria");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(228, Short.MAX_VALUE)
+                .addComponent(jLabel5)
+                .addGap(189, 189, 189))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addComponent(jLabel5)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 800, 50));
+
+        jPanel2.setBackground(new java.awt.Color(0, 102, 0));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 800, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 800, 10));
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(1, 1, 1));
+        jLabel6.setText("Categoría:");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, -1, -1));
+
+        campoCat.setEditable(false);
+        campoCat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoCatActionPerformed(evt);
+            }
+        });
+        jPanel1.add(campoCat, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 140, 230, -1));
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(1, 1, 1));
+        jLabel7.setText("Horario de clase 1:");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, -1, -1));
+
+        campoHorario1.setEditable(false);
+        jPanel1.add(campoHorario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 300, 230, -1));
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(1, 1, 1));
+        jLabel8.setText("Horario de clase 2:");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, -1, -1));
+
+        campoHorario2.setEditable(false);
+        campoHorario2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoHorario2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(campoHorario2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 350, 230, -1));
+
+        jButton12.setText("Atrás");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, 70, -1));
+
+        jButton14.setText("Finalizar");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 430, -1, -1));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 600, 20));
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(1, 1, 1));
+        jLabel9.setText("Alumno");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 70, -1));
+
+        campoNombreAHC.setEditable(false);
+        campoNombreAHC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoNombreAHCActionPerformed(evt);
+            }
+        });
+        jPanel1.add(campoNombreAHC, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 380, -1));
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(1, 1, 1));
+        jLabel10.setText("Asistir:");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 90, -1));
+
+        campoDiaAsistencia.setEditable(false);
+        jPanel1.add(campoDiaAsistencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 250, 380, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void campoCatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoCatActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoCatActionPerformed
+
+    private void campoHorario2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoHorario2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoHorario2ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void campoNombreAHCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoNombreAHCActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoNombreAHCActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +247,23 @@ public class AsignacionCatHor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField campoCat;
+    private javax.swing.JTextField campoDiaAsistencia;
+    private javax.swing.JTextField campoHorario1;
+    private javax.swing.JTextField campoHorario2;
+    private javax.swing.JTextField campoNombreAHC;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }
