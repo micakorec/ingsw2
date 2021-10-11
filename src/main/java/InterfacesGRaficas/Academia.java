@@ -68,7 +68,6 @@ public class Academia extends javax.swing.JFrame {
         jTextField9 = new javax.swing.JTextField();
         jTextField10 = new javax.swing.JTextField();
         jTextField11 = new javax.swing.JTextField();
-        jDateChooser2 = new com.toedter.calendar.JDateChooser();
         jTextField12 = new javax.swing.JTextField();
         jTextField13 = new javax.swing.JTextField();
         jTextField14 = new javax.swing.JTextField();
@@ -405,7 +404,6 @@ public class Academia extends javax.swing.JFrame {
         });
         AltaAlumno.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 275, -1));
         AltaAlumno.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, 275, -1));
-        AltaAlumno.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 140, 186, -1));
 
         jTextField12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -831,7 +829,6 @@ public class Academia extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private com.toedter.calendar.JDateChooser jDateChooser2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
