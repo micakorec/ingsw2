@@ -95,6 +95,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         BotonIngreso.setBackground(new java.awt.Color(204, 204, 0));
         BotonIngreso.setText("Ingresar");
+        BotonIngreso.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BotonIngresoMousePressed(evt);
+            }
+        });
         BotonIngreso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonIngresoActionPerformed(evt);
@@ -127,8 +132,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BotonIngresoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonIngresoActionPerformed
-        new MenuOpciones().setVisible(true);
+      //  new MenuOpciones().setVisible(true);
     }//GEN-LAST:event_BotonIngresoActionPerformed
+
+    private void BotonIngresoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonIngresoMousePressed
+       new MenuOpciones().setVisible(true);
+       dispose();
+    }//GEN-LAST:event_BotonIngresoMousePressed
 
     /**
      * @param args the command line arguments
