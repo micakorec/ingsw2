@@ -49,6 +49,7 @@ public class AltaAlumno extends javax.swing.JFrame {
         campoContEmerg = new javax.swing.JTextField();
         BotonAtras = new javax.swing.JButton();
         BotonGuardar = new javax.swing.JButton();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(800, 500));
@@ -191,6 +192,7 @@ public class AltaAlumno extends javax.swing.JFrame {
             }
         });
         jPanel1.add(BotonGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 440, 100, -1));
+        jPanel1.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 130, 190, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -271,6 +273,7 @@ public class AltaAlumno extends javax.swing.JFrame {
     private javax.swing.JTextField campoEdad;
     private javax.swing.JTextField campoNombre;
     private javax.swing.JTextField campoTelefono;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
