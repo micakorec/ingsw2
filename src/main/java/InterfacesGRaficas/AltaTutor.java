@@ -196,8 +196,7 @@ public class AltaTutor extends javax.swing.JFrame {
     }//GEN-LAST:event_campoDniTActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        AltaTutor.setVisible(false);
-        MensajAsignacion.setVisible(true);        // TODO add your handling code here:
+
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void campoNombreTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoNombreTActionPerformed
