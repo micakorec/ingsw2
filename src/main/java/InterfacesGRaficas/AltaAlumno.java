@@ -76,7 +76,7 @@ public class AltaAlumno extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Century Schoolbook L", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Menú alumnos");
+        jLabel5.setText("Nuevo Alumno");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -85,7 +85,7 @@ public class AltaAlumno extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(255, 255, 255)
                 .addComponent(jLabel5)
-                .addContainerGap(269, Short.MAX_VALUE))
+                .addContainerGap(268, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -223,8 +223,7 @@ public class AltaAlumno extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonAtrasActionPerformed
 
     private void BotonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonGuardarActionPerformed
-        AltaAlumno.setVisible(false);
-        AltaTutor.setVisible(true);        // TODO add your handling code here:
+      
     }//GEN-LAST:event_BotonGuardarActionPerformed
 
     /**
