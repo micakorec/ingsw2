@@ -5,6 +5,8 @@
  */
 package InterfacesGRaficas;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author micaelakorec
@@ -246,8 +248,21 @@ public class AltaAlumno extends javax.swing.JFrame {
 
     private void BotonGuardarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonGuardarMousePressed
         // TODO add your handling code here:
+        // controlar que ningun campo este vacio
         // si es mayor de edad debe ir a la asignacion de categoria
         // si es menor debe pedir los datos del tutor
+        if(campoApellido.getText().isEmpty() || campoNombre.getText().isEmpty() || campoDni.getText().isEmpty() || campoEdad.getText().isEmpty() || campoDireccion.getText().isEmpty() || campoTelefono.getText().isEmpty() || campoContEmerg.getText().isEmpty()){
+        //si algun campo esta vacio
+        JOptionPane.showMessageDialog(rootPane, "Debe ingresar todos los datos");
+        }else if(Integer.parseInt(campoEdad.getText()) < 18){
+        // envio a menu tutor
+            new AltaTutor().setVisible(true);
+            dispose();
+        }else{
+        // muestro asignacion
+            new AsignacionCatHor().setVisible(true);
+            dispose();
+        }
         
     }//GEN-LAST:event_BotonGuardarMousePressed
 

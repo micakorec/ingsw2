@@ -61,7 +61,7 @@ public class AlumnoDAO {
         return this.listaAlumnos;
     }
     
-    public Alumno getMesa(int num) {
+    public Alumno getAlumno(int num) {
         Alumno c = null;
         try {
             ResultSet resultSet = null;
