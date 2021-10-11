@@ -63,7 +63,7 @@ public class MenuAlumnos extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(9, 151, 9));
 
-        jLabel5.setFont(new java.awt.Font("URW Chancery L", 1, 36)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Century Schoolbook L", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Menú de opciones");
 
@@ -72,15 +72,15 @@ public class MenuAlumnos extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(277, 277, 277)
+                .addGap(223, 223, 223)
                 .addComponent(jLabel5)
-                .addContainerGap(281, Short.MAX_VALUE))
+                .addContainerGap(241, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addComponent(jLabel5)
-                .addGap(0, 3, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 800, 50));
@@ -163,8 +163,7 @@ public class MenuAlumnos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BotonMenuAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonMenuAlumnoActionPerformed
-        MenuPrincipal.setVisible(false);
-        MenuAlumnos.setVisible(true);
+        
     }//GEN-LAST:event_BotonMenuAlumnoActionPerformed
 
     private void BotonGestionIngresoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonGestionIngresoActionPerformed
@@ -217,24 +216,8 @@ public class MenuAlumnos extends javax.swing.JFrame {
     private javax.swing.JButton BotonMenuAlumno;
     private javax.swing.JButton BotonMenuTutor;
     private javax.swing.JButton BotonSalir;
-    private javax.swing.JPanel MenuPrincipal1;
-    private javax.swing.JPanel MenuPrincipal2;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton30;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel14;
-    private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
