@@ -153,7 +153,19 @@ public class AltaAlumno extends javax.swing.JFrame {
         jLabel22.setForeground(new java.awt.Color(1, 1, 1));
         jLabel22.setText("Contacto de emergencia:");
         jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, -1, -1));
+
+        campoNombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                campoNombreKeyTyped(evt);
+            }
+        });
         jPanel1.add(campoNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 275, -1));
+
+        campoApellido.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                campoApellidoKeyTyped(evt);
+            }
+        });
         jPanel1.add(campoApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, 275, -1));
 
         campoDni.addActionListener(new java.awt.event.ActionListener() {
@@ -161,12 +173,28 @@ public class AltaAlumno extends javax.swing.JFrame {
                 campoDniActionPerformed(evt);
             }
         });
+        campoDni.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                campoDniKeyTyped(evt);
+            }
+        });
         jPanel1.add(campoDni, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 275, -1));
+
+        campoEdad.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                campoEdadKeyTyped(evt);
+            }
+        });
         jPanel1.add(campoEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, 275, -1));
 
         campoTelefono.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campoTelefonoActionPerformed(evt);
+            }
+        });
+        campoTelefono.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                campoTelefonoKeyTyped(evt);
             }
         });
         jPanel1.add(campoTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 190, 265, -1));
@@ -175,6 +203,11 @@ public class AltaAlumno extends javax.swing.JFrame {
         campoContEmerg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campoContEmergActionPerformed(evt);
+            }
+        });
+        campoContEmerg.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                campoContEmergKeyTyped(evt);
             }
         });
         jPanel1.add(campoContEmerg, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 290, 159, -1));
@@ -251,6 +284,9 @@ public class AltaAlumno extends javax.swing.JFrame {
         // controlar que ningun campo este vacio
         // si es mayor de edad debe ir a la asignacion de categoria
         // si es menor debe pedir los datos del tutor
+        // control dni desde 6000000 hasta 60000000
+        // control telefono hasta 10 digitos
+        // edad desde 3 hasta 100
         if(campoApellido.getText().isEmpty() || campoNombre.getText().isEmpty() || campoDni.getText().isEmpty() || campoEdad.getText().isEmpty() || campoDireccion.getText().isEmpty() || campoTelefono.getText().isEmpty() || campoContEmerg.getText().isEmpty()){
         //si algun campo esta vacio
         JOptionPane.showMessageDialog(rootPane, "Debe ingresar todos los datos");
@@ -265,6 +301,57 @@ public class AltaAlumno extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_BotonGuardarMousePressed
+// control de la fecha... no deje escribir nada
+    
+    private void campoNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoNombreKeyTyped
+    char validar = evt.getKeyChar();
+        
+        if(Character.isDigit(validar)){
+            evt.consume();
+        }
+    }//GEN-LAST:event_campoNombreKeyTyped
+
+    private void campoApellidoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoApellidoKeyTyped
+       char validar = evt.getKeyChar();
+        
+        if(Character.isDigit(validar)){
+            evt.consume();
+        }
+    }//GEN-LAST:event_campoApellidoKeyTyped
+
+    private void campoDniKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoDniKeyTyped
+        // TODO add your handling code here:
+        char validar = evt.getKeyChar();
+        
+        if(!Character.isDigit(validar)){
+            evt.consume();
+        }
+    }//GEN-LAST:event_campoDniKeyTyped
+
+    private void campoEdadKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoEdadKeyTyped
+        char validar = evt.getKeyChar();
+        
+        if(!Character.isDigit(validar)){
+            evt.consume();
+        }
+    }//GEN-LAST:event_campoEdadKeyTyped
+
+    private void campoTelefonoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoTelefonoKeyTyped
+        char validar = evt.getKeyChar();
+        
+        if(!Character.isDigit(validar)){
+            evt.consume();
+        }
+    }//GEN-LAST:event_campoTelefonoKeyTyped
+
+    private void campoContEmergKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoContEmergKeyTyped
+        // TODO add your handling code here:
+        char validar = evt.getKeyChar();
+        
+        if(!Character.isDigit(validar)){
+            evt.consume();
+        }
+    }//GEN-LAST:event_campoContEmergKeyTyped
 
     /**
      * @param args the command line arguments

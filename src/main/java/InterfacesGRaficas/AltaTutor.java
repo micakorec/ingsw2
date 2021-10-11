@@ -5,6 +5,8 @@
  */
 package InterfacesGRaficas;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author micaelakorec
@@ -134,12 +136,28 @@ public class AltaTutor extends javax.swing.JFrame {
                 campoNombreTActionPerformed(evt);
             }
         });
+        campoNombreT.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                campoNombreTKeyTyped(evt);
+            }
+        });
         jPanel1.add(campoNombreT, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, 271, -1));
+
+        campoApellidoT.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                campoApellidoTKeyTyped(evt);
+            }
+        });
         jPanel1.add(campoApellidoT, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 170, 271, -1));
 
         campoRelacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campoRelacionActionPerformed(evt);
+            }
+        });
+        campoRelacion.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                campoRelacionKeyTyped(evt);
             }
         });
         jPanel1.add(campoRelacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 220, 180, -1));
@@ -149,11 +167,21 @@ public class AltaTutor extends javax.swing.JFrame {
                 campoTelefonoTActionPerformed(evt);
             }
         });
+        campoTelefonoT.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                campoTelefonoTKeyTyped(evt);
+            }
+        });
         jPanel1.add(campoTelefonoT, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 320, 269, -1));
 
         campoDniT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campoDniTActionPerformed(evt);
+            }
+        });
+        campoDniT.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                campoDniTKeyTyped(evt);
             }
         });
         jPanel1.add(campoDniT, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 270, 270, -1));
@@ -162,6 +190,11 @@ public class AltaTutor extends javax.swing.JFrame {
         jPanel1.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 90, -1));
 
         jButton18.setText("Guardar");
+        jButton18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton18MousePressed(evt);
+            }
+        });
         jButton18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton18ActionPerformed(evt);
@@ -202,6 +235,68 @@ public class AltaTutor extends javax.swing.JFrame {
     private void campoNombreTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoNombreTActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_campoNombreTActionPerformed
+
+    private void campoNombreTKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoNombreTKeyTyped
+      char validar = evt.getKeyChar();
+        
+        if(Character.isDigit(validar)){
+            evt.consume();
+        }
+    }//GEN-LAST:event_campoNombreTKeyTyped
+
+    private void campoApellidoTKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoApellidoTKeyTyped
+        // TODO add your handling code here:
+        char validar = evt.getKeyChar();
+        
+        if(Character.isDigit(validar)){
+            evt.consume();
+        }
+    }//GEN-LAST:event_campoApellidoTKeyTyped
+
+    private void campoRelacionKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoRelacionKeyTyped
+        // TODO add your handling code here:
+        char validar = evt.getKeyChar();
+        
+        if(Character.isDigit(validar)){
+            evt.consume();
+        }
+    }//GEN-LAST:event_campoRelacionKeyTyped
+
+    private void campoDniTKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoDniTKeyTyped
+        // TODO add your handling code here:
+        char validar = evt.getKeyChar();
+        
+        if(!Character.isDigit(validar)){
+            evt.consume();
+        }
+    }//GEN-LAST:event_campoDniTKeyTyped
+
+    private void campoTelefonoTKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoTelefonoTKeyTyped
+        // TODO add your handling code here:
+        char validar = evt.getKeyChar();
+        
+        if(!Character.isDigit(validar)){
+            evt.consume();
+        }
+    }//GEN-LAST:event_campoTelefonoTKeyTyped
+
+    private void jButton18MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton18MousePressed
+              // TODO add your handling code here:
+        // controlar que ningun campo este vacio
+        // si es mayor de edad debe ir a la asignacion de categoria
+        // si es menor debe pedir los datos del tutor
+        // control dni desde 6000000 hasta 60000000
+        // control telefono hasta 10 digitos
+        // edad desde 3 hasta 100
+        if(campoApellidoT.getText().isEmpty() || campoNombreT.getText().isEmpty() || campoDniT.getText().isEmpty() || campoRelacion.getText().isEmpty() || campoTelefonoT.getText().isEmpty() ){
+        //si algun campo esta vacio
+        JOptionPane.showMessageDialog(rootPane, "Debe ingresar todos los datos");
+        }else{
+        // muestro asignacion
+            new AsignacionCatHor().setVisible(true);
+            dispose();
+        }
+    }//GEN-LAST:event_jButton18MousePressed
 
     /**
      * @param args the command line arguments
