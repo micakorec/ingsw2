@@ -63,7 +63,7 @@ public class MenuAlumnos extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(9, 151, 9));
 
-        jLabel5.setFont(new java.awt.Font("Lanterosy Sans Serif", 0, 36)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("URW Chancery L", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Menú de opciones");
 
@@ -72,16 +72,15 @@ public class MenuAlumnos extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(281, 281, 281)
+                .addGap(277, 277, 277)
                 .addComponent(jLabel5)
-                .addContainerGap(280, Short.MAX_VALUE))
+                .addContainerGap(281, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jLabel5)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 3, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 800, 50));
