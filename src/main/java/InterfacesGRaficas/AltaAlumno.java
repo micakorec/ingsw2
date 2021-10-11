@@ -287,6 +287,7 @@ public class AltaAlumno extends javax.swing.JFrame {
         // control dni desde 6000000 hasta 60000000
         // control telefono hasta 10 digitos
         // edad desde 3 hasta 100
+        // asignar categoria segun la edad
         if(campoApellido.getText().isEmpty() || campoNombre.getText().isEmpty() || campoDni.getText().isEmpty() || campoEdad.getText().isEmpty() || campoDireccion.getText().isEmpty() || campoTelefono.getText().isEmpty() || campoContEmerg.getText().isEmpty()){
         //si algun campo esta vacio
         JOptionPane.showMessageDialog(rootPane, "Debe ingresar todos los datos");

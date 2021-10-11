@@ -187,6 +187,11 @@ public class AltaTutor extends javax.swing.JFrame {
         jPanel1.add(campoDniT, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 270, 270, -1));
 
         jButton17.setText("Atrás");
+        jButton17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton17MousePressed(evt);
+            }
+        });
         jPanel1.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 90, -1));
 
         jButton18.setText("Guardar");
@@ -297,6 +302,12 @@ public class AltaTutor extends javax.swing.JFrame {
             dispose();
         }
     }//GEN-LAST:event_jButton18MousePressed
+
+    private void jButton17MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton17MousePressed
+        // TODO add your handling code here:
+        new AltaAlumno().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton17MousePressed
 
     /**
      * @param args the command line arguments

@@ -16,6 +16,13 @@ public class AsignacionCatHor extends javax.swing.JFrame {
      */
     public AsignacionCatHor() {
         initComponents();
+        //asiganacion de categoria
+        //AsignacionCatHor(Alumno a){
+        // hacer switch
+        // if(a.getEdad < 10){
+            // a.setcategoria -> infantil
+            // textfield -> a.getCategoria}
+        //}
     }
 
     /**
@@ -148,6 +155,11 @@ public class AsignacionCatHor extends javax.swing.JFrame {
         jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, 70, -1));
 
         jButton14.setText("Finalizar");
+        jButton14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButton14MousePressed(evt);
+            }
+        });
         jButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton14ActionPerformed(evt);
@@ -210,6 +222,11 @@ public class AsignacionCatHor extends javax.swing.JFrame {
     private void campoNombreAHCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoNombreAHCActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_campoNombreAHCActionPerformed
+
+    private void jButton14MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton14MousePressed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jButton14MousePressed
 
     /**
      * @param args the command line arguments
