@@ -32,7 +32,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
+        BotonIngreso = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
@@ -93,14 +93,14 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 500));
 
-        jButton2.setBackground(new java.awt.Color(204, 204, 0));
-        jButton2.setText("Ingresar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        BotonIngreso.setBackground(new java.awt.Color(204, 204, 0));
+        BotonIngreso.setText("Ingresar");
+        BotonIngreso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                BotonIngresoActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 360, 240, 35));
+        jPanel1.add(BotonIngreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 360, 240, 35));
 
         jLabel3.setFont(new java.awt.Font("URW Chancery L", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(1, 1, 1));
@@ -126,9 +126,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-    
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void BotonIngresoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonIngresoActionPerformed
+        new MenuOpciones().setVisible(true);
+    }//GEN-LAST:event_BotonIngresoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -169,7 +169,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton BotonIngreso;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
